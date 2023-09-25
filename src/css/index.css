@@ -1,0 +1,109 @@
+:root{
+    font-size: 65.2%;
+
+    --text:#E1E1E6;
+    --text-nav:#C4C4CC;
+    --white: #FFFFFF;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#backgroundImg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 4rem 0 4rem 7.8rem;
+    gap: 32px;
+}
+
+a {
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    color: var(--text-nav);
+    text-decoration: none;
+
+}
+.active{
+    color: var(--white);
+}
+h1 {
+    font-family: Roboto;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 6rem;
+    color: var(--text);
+}
+
+#app {
+    width: 100%;
+    height: 80vh;
+}
+
+.box {
+    width: min(65rem,100%);
+    height: 100%;
+    display: flex;
+    gap: 2.4rem;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 10rem;
+
+}
+.centralize{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+p {
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.9rem;
+    color: var(--text);
+}
+
+button {
+    padding: 1.2rem 3.2rem;
+    border-radius: .5rem;
+    border: .2rem;
+    gap: .8rem;
+    border: .1rem solid var(--white);
+    background: none;
+    color: var(--white);
+    font-family: Roboto;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+
+}
+@media (max-width:400px) {
+    .box{
+        margin: 0;
+        padding: 1rem;
+    }
+    nav{
+        padding: 4rem 1rem;
+    }
+}
